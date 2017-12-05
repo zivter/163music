@@ -14,7 +14,7 @@
             <img :src="albumsrc" alt="">
         </div> -->
         <div class="p-lyr">
-            <p>啥他妈了逼的爱情,我爱你妈了逼啊</p>
+            <p>歌词</p>
         </div>
         <div class="p-contr">
             <p @click="audioPause" class="pause"></p>
