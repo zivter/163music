@@ -34,7 +34,7 @@ export default {
         "swipe-item":SwipeItem
     },
      mounted(){
-        axios.get("http://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg?g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1&_=1510366699907",{
+        axios.get("/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg?g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1&_=1510366699907",{
   		}).then(res=>{
               this.pics = res.data.data.slider;
               this.radios = res.data.data.radioList;

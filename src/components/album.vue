@@ -47,7 +47,7 @@ export default{
     components:{
     },
     mounted(){
-        axios.get(`http://c.y.qq.com/v8/fcg-bin/fcg_v8_album_info_cp.fcg?albummid=${this.$route.params.albummid}&g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1&_=1510797685616`,{
+        axios.get(`/v8/fcg-bin/fcg_v8_album_info_cp.fcg?albummid=${this.$route.params.albummid}&g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1&_=1510797685616`,{
         }).then(res=>{
             console.log(res.data.data);
             this.songinfo = res.data.data;

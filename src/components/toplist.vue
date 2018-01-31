@@ -36,7 +36,7 @@ export default{
     },
     mounted(){
         console.log(this.$route.params.topid);
-        axios.get(`http://c.y.qq.com/v8/fcg-bin/fcg_v8_toplist_cp.fcg?g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1&tpl=3&page=detail&type=top&topid=${this.$route.params.topid}&_=1510646469987`,{
+        axios.get(`/v8/fcg-bin/fcg_v8_toplist_cp.fcg?g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1&tpl=3&page=detail&type=top&topid=${this.$route.params.topid}&_=1510646469987`,{
         }).then(res=>{
             console.log(res.data);
             this.piclist = res.data.topinfo;

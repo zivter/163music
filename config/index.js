@@ -31,7 +31,26 @@ module.exports = {
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
         proxyTable: {
- 
+            '/musichall/fcgi-bin': {
+                target: 'http://c.y.qq.com/',
+                host: 'c.y.qq.com/',
+                changeOrigin: true
+            },
+            '/v8/fcg-bin': {
+                target: 'http://c.y.qq.com/',
+                host: 'c.y.qq.com/',
+                changeOrigin: true
+            },
+            '/splcloud/fcgi-bin': {
+                target: 'http://c.y.qq.com/',
+                host: 'c.y.qq.com/',
+                changeOrigin: true
+            },
+            '/soso/fcgi-bin': {
+                target: 'http://c.y.qq.com/',
+                host: 'c.y.qq.com/',
+                changeOrigin: true
+            }
         },
         // CSS Sourcemaps off by default because relative paths are "buggy"
         // with this option, according to the CSS-Loader README
