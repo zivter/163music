@@ -1,5 +1,5 @@
 <template>
-  <div class="logo">
+  <div class="logo"  @click="back">
     <h1 class="topfl">
       <span class="topplh">网易云音乐</span>
       <svg class="topsvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 284 50">
@@ -10,7 +10,14 @@
   </div>
 </template>
 <script>
-    
+  import axios from 'axios';
+    export default{
+      methods:{
+          back(){
+            window.history.back();
+          },
+      }
+  }
 </script>
 <style lang="scss" scoped>
 .logo{
