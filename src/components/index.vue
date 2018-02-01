@@ -1,17 +1,11 @@
 <template>
   <div class="navbar">
-    <ul class="navul">
-        <router-link tag="li" to="/index/tuijian" activeClass="active">推荐</router-link>
-        <router-link tag="li" to="/index/rank" activeClass="active">排行榜</router-link>
-        <router-link tag="li" to="/index/search" activeClass="active">搜索</router-link>
-    </ul>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
-import router from "@/router";
 export default {
     data(){
         return{
@@ -37,17 +31,4 @@ export default {
 
 <style lang="scss" scoped>
 
-.navul{
-    z-index: 10;
-    display:flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ddd;
-    li{
-        padding:10px 43px;
-        list-style: none;
-    }
-    .active{
-		border-bottom: 3px solid #d43c33;
-	}
-}
 </style>

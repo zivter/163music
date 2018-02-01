@@ -4,15 +4,18 @@
     <section>
         <router-view></router-view>
     </section>
+    <navbar></navbar>
   </div>
 </template>
 
 <script>
 import logo from "@/components/logo"
+import navbar from "@/components/navbar"
 
 export default {
   components:{
-    logo
+    logo,
+    navbar
   }
 }
 </script>
@@ -21,5 +24,11 @@ export default {
 *{
   padding: 0;
   margin: 0;
+}
+html,body{
+  width:100%;
+  height: 100%;
+}
+#app{
 }
 </style>
