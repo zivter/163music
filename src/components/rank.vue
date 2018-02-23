@@ -42,7 +42,7 @@ export default {
 <style lang="scss" scoped>
 .rankul{
     background: #f6f6f6;
-    padding:10px 12px;
+    padding:.2rem .24rem 1.6rem;
     .rankli{
         overflow: hidden;
         margin:0px 0px 5px 0px;
@@ -62,6 +62,10 @@ export default {
         .tittle{
             color:#333;
             margin-top:2px;
+        }
+        h4{
+            font-size: .36rem;
+            font-weight: 700;
         }
     }
     .info .songlist{

@@ -25,9 +25,10 @@ export default {
   padding: 0;
   margin: 0;
 }
-html,body{
+body{
   width:100%;
   height: 100%;
+  margin-top: 1rem;
 }
 #app{
 }
