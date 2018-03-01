@@ -28,7 +28,7 @@
             </li>
         </ul>
         <div class="brand">
-			<img class="brand-logo" src="//y.gtimg.cn/mediastyle/mod/mobile/img/logo.svg?max_age=2592000" alt="">
+			<img class="brand-logo" src="../../static/img/musicIcon.png" alt="">
 			<p class="brand-name">QQ音乐</p>
 		</div>
     </div>
@@ -150,6 +150,7 @@ export default{
             width: 45px;
             margin-right: -16px;
             color:#888;
+            font: .36rem/.64rem "";
         }
         .liinfo{
             float: left;
@@ -162,6 +163,7 @@ export default{
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+                font: .28rem/.36rem "";
             }
             .listtxt{
                 display: block;
@@ -171,6 +173,7 @@ export default{
                 text-overflow: ellipsis;
                 font: 300 12px/1.5 sans-serif;
                 color:#777;
+                font: .24rem/.36rem "";
             }
         }
     }
