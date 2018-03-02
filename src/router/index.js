@@ -27,13 +27,10 @@ export default new Router({
                     component: search
                 },
                 {
-<<<<<<< HEAD
-=======
                     path: 'user',
                     component: search
                 },
                 {
->>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
                     path: '/',
                     redirect: '/index/tuijian'
                 }
