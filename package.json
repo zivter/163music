@@ -12,10 +12,17 @@
     "test": "npm run e2e"
   },
   "dependencies": {
+<<<<<<< HEAD
     "iview": "^2.9.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vue-swipe": "^2.3.0"
+=======
+    "mint-ui": "^2.2.13",
+    "vue": "^2.5.2",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

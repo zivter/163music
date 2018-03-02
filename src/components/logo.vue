@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="logo"  @click="back">
     <h1 class="topfl">
       <span class="topplh">网易云音乐</span>
@@ -7,6 +8,11 @@
       </svg>
     </h1>
     <a href="https://itunes.apple.com/app/id590338362" class="download">下载APP</a>
+=======
+  <div class="logo">
+    <i class="back" @click="back"></i>
+    <p class="logoTittle" :class="logoTittle"></p>
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
   </div>
 </template>
 <script>
@@ -21,6 +27,7 @@
 </script>
 <style lang="scss" scoped>
 .logo{
+<<<<<<< HEAD
   padding-left: 10px;
   padding-right: 10px;
   height:64px;
@@ -44,6 +51,24 @@
     padding: 0 10px;
     font:400 18px/30px "";
     margin-top: -6px;
+=======
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1rem;
+  display: block;
+  width: 100%;
+  background: #191919;
+  z-index: 2;
+  .back{
+    float: left;
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    background: url("../../static/img/back.png") no-repeat center;
+    background-size: 100%;
+    margin: .25rem 0 0 .2rem;
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
   }
 }
 </style>

@@ -28,7 +28,11 @@
             </li>
         </ul>
         <div class="brand">
+<<<<<<< HEAD
 			<img class="brand-logo" src="//y.gtimg.cn/mediastyle/mod/mobile/img/logo.svg?max_age=2592000" alt="">
+=======
+			<img class="brand-logo" src="../../static/img/musicIcon.png" alt="">
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
 			<p class="brand-name">QQ音乐</p>
 		</div>
     </div>
@@ -150,6 +154,10 @@ export default{
             width: 45px;
             margin-right: -16px;
             color:#888;
+<<<<<<< HEAD
+=======
+            font: .36rem/.64rem "";
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
         }
         .liinfo{
             float: left;
@@ -162,6 +170,10 @@ export default{
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+<<<<<<< HEAD
+=======
+                font: .28rem/.36rem "";
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
             }
             .listtxt{
                 display: block;
@@ -171,6 +183,10 @@ export default{
                 text-overflow: ellipsis;
                 font: 300 12px/1.5 sans-serif;
                 color:#777;
+<<<<<<< HEAD
+=======
+                font: .24rem/.36rem "";
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
             }
         }
     }

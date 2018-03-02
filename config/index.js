@@ -26,7 +26,11 @@ module.exports = {
     },
     dev: {
         env: require('./dev.env'),
+<<<<<<< HEAD
         port: process.env.PORT || 8080,
+=======
+        port: process.env.PORT || 8081,
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
         autoOpenBrowser: true,
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
@@ -35,25 +39,39 @@ module.exports = {
                 target: 'http://c.y.qq.com/',
                 host: 'c.y.qq.com/',
                 changeOrigin: true
+<<<<<<< HEAD
                     // pathRewrite: {
                     //     '^/weapi': '/weapi'
                     // }
+=======
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
             },
             '/v8/fcg-bin': {
                 target: 'http://c.y.qq.com/',
                 host: 'c.y.qq.com/',
                 changeOrigin: true
+<<<<<<< HEAD
                     // pathRewrite: {
                     //     '^/weapi': '/weapi'
                     // }
+=======
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
             },
             '/splcloud/fcgi-bin': {
                 target: 'http://c.y.qq.com/',
                 host: 'c.y.qq.com/',
                 changeOrigin: true
+<<<<<<< HEAD
                     // pathRewrite: {
                     //     '^/weapi': '/weapi'
                     // }
+=======
+            },
+            '/soso/fcgi-bin': {
+                target: 'http://c.y.qq.com/',
+                host: 'c.y.qq.com/',
+                changeOrigin: true
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
             }
         },
         // CSS Sourcemaps off by default because relative paths are "buggy"

@@ -135,6 +135,10 @@ export default{
             width: 45px;
             margin-right: -16px;
             color:#888;
+<<<<<<< HEAD
+=======
+            font-size: .36rem;
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
         }
         .liinfo{
             float: left;
@@ -147,6 +151,10 @@ export default{
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+<<<<<<< HEAD
+=======
+                font-size: .36rem;
+>>>>>>> 8014d63a0fb7c55429d04266f4c161938f951a31
             }
             .listtxt{
                 display: block;
