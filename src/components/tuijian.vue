@@ -1,11 +1,11 @@
 <template>
 <div class="tuijian">
     <mt-swipe :auto="4000" class="box">
-        <mt-swipe-item v-for="item in pics" ><img :src="item.picUrl" alt="" @click="handclick(item.linkUrl)"></mt-swipe-item>
+        <mt-swipe-item v-for="item in pics" :key="item.picUrl"><img :src="item.picUrl" alt="" @click="handclick(item.linkUrl)"></mt-swipe-item>
     </mt-swipe>
     <h4>电台</h4>
     <ul class="radioUl">
-        <li v-for="radio in radios"><img :src="radio.picUrl" alt=""><span class="tittle">{{radio.Ftitle}}</span></li>
+        <li v-for="radio in radios" :key="radio.picUrl"><img :src="radio.picUrl" alt=""><span class="tittle">{{radio.Ftitle}}</span></li>
     </ul>
     <h4>热门歌单</h4>
     <p class="btm btm1">author: yezhouteng@gmail.com</p>

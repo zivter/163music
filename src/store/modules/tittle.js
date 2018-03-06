@@ -1,13 +1,10 @@
 const state = {
-    count: 1
+    tittle: "zivter"
 }
 
 const mutations = {
-    add(state) {
-        state.count += 1;
-    },
-    reduce(state) {
-        state.count -= 1;
+    changeTittle(tittle, e) {
+        state.tittle = e;
     }
 }
 

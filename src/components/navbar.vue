@@ -1,26 +1,35 @@
 <template>
   <div class="navbar">
     <ul class="navul">
-        <router-link tag="li" to="/index/tuijian" class="icon icon-1" active-class="active1">推荐</router-link>
-        <router-link tag="li" to="/index/rank" class="icon icon-2" active-class="active2">排行榜</router-link>
-        <router-link tag="li" to="/index/search" class="icon icon-3" active-class="active3">搜索</router-link>
-        <router-link tag="li" to="/index/user" class="icon icon-4" active-class="active4">我的</router-link>
+        <router-link tag="li" to="/index/tuijian" class="icon icon-1" active-class="active1" @click.native="$store.commit('changeTittle',name)">{{this.nav1}}</router-link>
+        <router-link tag="li" to="/index/rank" class="icon icon-2" active-class="active2" @click.native="$store.commit('changeTittle',nav2)">{{this.nav2}}</router-link>
+        <router-link tag="li" to="/index/search" class="icon icon-3" active-class="active3" @click.native="$store.commit('changeTittle',nav3)">{{this.nav3}}</router-link>
+        <router-link tag="li" to="/index/user" class="icon icon-4" active-class="active4" @click.native="$store.commit('changeTittle',nav4)">{{this.nav4}}</router-link>
     </ul>
   </div>
   
 </template>
 
 <script>
-import axios from 'axios';
-import router from "@/router";
+import axios from 'axios';0
+import router from "@/router";  
+import tittle from '../store/modules/tittle'
+
 export default {
     data(){
         return{
-            
+            nav1:"推荐",
+            nav2:"排行榜",
+            nav3:"搜索",
+            nav4:"我的",
+            name:"zivter"
         }
     },
+    tittle,
     mounted(){
         
+    },
+    created:function(){
     },
     methods:{
     }

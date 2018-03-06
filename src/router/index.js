@@ -7,6 +7,7 @@ import search from '@/components/search'
 import toplist from '@/components/toplist'
 import player from '@/components/player'
 import album from '@/components/album'
+import user from '@/components/user'
 
 Vue.use(Router)
 
@@ -28,7 +29,7 @@ export default new Router({
                 },
                 {
                     path: 'user',
-                    component: search
+                    component: user
                 },
                 {
                     path: '/',

@@ -1,11 +1,7 @@
 <template>
   <div class="logo">
-    <i class="back" @click="back"></i>
-    <p class="logoTittle"></p>
-    <div>
-        <button @click="$store.commit('add')">+</button>
-        <button @click="$store.commit('reduce')">-</button>
-    </div>
+    <i class="back" @click="back()"></i>
+    <p class="logoTittle">{{this.$store.state.tittle.tittle}}</p>
   </div>
 </template>
 <script>
@@ -14,17 +10,12 @@
 
   export default{
     data(){
-
+      return{}
     },
     tittle,
     methods:{
         back(){
           window.history.back();
-        },
-        count(){
-          console.log(this.$store.state.count)
-            return this.$store.state.count;
-            
         }
     }
   }
@@ -47,6 +38,12 @@
     background: url("../../static/img/back.png") no-repeat center;
     background-size: 100%;
     margin: .25rem 0 0 .2rem;
+  }
+  .logoTittle{
+    color: #fff;
+    font: .6rem/1rem "";
+    text-align: center;
+    margin-right: 1rem;
   }
 }
 </style>
