@@ -15,7 +15,7 @@
         </div>
         <p class="add">专辑 共{{songinfo.total}}首</p>
         <ul class="toplistul">
-            <li v-for="song,index in songinfo.list" class="toplistli" @click="play(song.songid,song.albummid,song.songname,song.singer[0].name)"><div class="liIndex">{{index+1}}</div><div class="liinfo"><span class="tittle">{{song.songname}}</span><span class="listtxt">{{song.singer[0].name}}</span></div></li>
+            <li v-for="song,index in songinfo.list" class="toplistli" @click="play(song.songid,song.albummid,song.songname,song.singer[0].name)" v-bind:key="index in songinfo.list"><div class="liIndex">{{index+1}}</div><div class="liinfo"><span class="tittle">{{song.songname}}</span><span class="listtxt">{{song.singer[0].name}}</span></div></li>
         </ul>
         <h3 class="albumintr">专 辑 简 介</h3>
         <p class="albumintro">{{songinfo.desc}}</p>

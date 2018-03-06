@@ -6,6 +6,7 @@ import router from './router'
 import store from './store'
 import ElementUI from "element-ui";
 import './assets/my-mint.scss'; //全局修改mint-UI样式  
+import storeConfig from './store'
 
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI);
