@@ -1,17 +1,32 @@
 <template>
   <div class="logo">
     <i class="back" @click="back"></i>
-    <p class="logoTittle" :class="logoTittle"></p>
+    <p class="logoTittle"></p>
+    <div>
+        <button @click="$store.commit('add')">+</button>
+        <button @click="$store.commit('reduce')">-</button>
+    </div>
   </div>
 </template>
 <script>
   import axios from 'axios';
-    export default{
-      methods:{
-          back(){
-            window.history.back();
-          },
-      }
+  import tittle from '../store/modules/tittle'
+
+  export default{
+    data(){
+
+    },
+    tittle,
+    methods:{
+        back(){
+          window.history.back();
+        },
+        count(){
+          console.log(this.$store.state.count)
+            return this.$store.state.count;
+            
+        }
+    }
   }
 </script>
 <style lang="scss" scoped>

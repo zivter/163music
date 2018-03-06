@@ -29,7 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 .navbar{
-    width: 7.5rem;
+    width: 100%;
     position: fixed;
     left: 0;
     bottom: 0;
