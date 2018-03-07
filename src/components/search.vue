@@ -13,7 +13,7 @@
         </div>
         <div class="sousuo" v-show="issousuo">
             <ul class="searchul1">
-                <li v-for="search1,index in searchlist1">
+                <li v-for="search1,index in searchlist1" @click="play(search1.songid,search1.albummid,search1.songname,search1.singer[0].name)">
                     <i class="icon"></i>
                     <div class="search-r">
                         <p class="songname">{{search1.songname}}</p>
@@ -27,7 +27,10 @@
 <script>
 import { Search } from 'mint-ui';
 import axios from 'axios';
+import router from "@/router";
+
 export default{
+    name:"search",
     data(){
         return{
             value:"",
@@ -45,7 +48,6 @@ export default{
         axios.get("/splcloud/fcgi-bin/gethotkey.fcg?g_tk=5381&uin=0&format=json&inCharset=utf-8&outCharset=utf-8&notice=0&platform=h5&needNewCode=1&_=1510370320879",{
   		}).then(res=>{
             this.searchlist = res.data.data.hotkey;
-  			console.log(res.data.data.hotkey);
         });
     },
     methods:{
@@ -77,6 +79,16 @@ export default{
                 this.sub = e;
                 this.show();
             });
+        },
+        play(songid,albummid,songname,singername){
+            console.log(songid,albummid,songname,singername);
+            router.push({name:"player",params:{
+                    songid:songid,
+                    albummid:albummid,
+                    songname:songname,
+                    singername:singername
+                }
+            })
         }
     }
 }

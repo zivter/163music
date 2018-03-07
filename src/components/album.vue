@@ -29,7 +29,7 @@
         </ul>
         <div class="brand">
 			<img class="brand-logo" src="../../static/img/musicIcon.png" alt="">
-			<p class="brand-name">QQ音乐</p>
+			<p class="brand-name">zivter</p>
 		</div>
     </div>
 </template>

@@ -43,7 +43,7 @@
     color: #fff;
     font: .6rem/1rem "";
     text-align: center;
-    margin-right: 1rem;
+    margin-right: .4rem;
   }
 }
 </style>

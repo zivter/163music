@@ -9,7 +9,8 @@
     </ul>
     <h4>热门歌单</h4>
     <p class="btm btm1">author: yezhouteng@gmail.com</p>
-    <p class="btm">github: https://github.com/zivter</p>
+    <a href="https://github.com/zivter" class="btm">github: https://github.com/zivter</a>
+    <a href="https://weibo.com/u/1810240625" class="btm">weibo: https://weibo.com/u/1810240625</a>
     <p class="btm">wechat: yezhouteng</p>
 </div>
 </template>
@@ -114,6 +115,8 @@ h4{
     font-size: .1rem;
     color:#999;
     margin-bottom: .2rem;
+    display: block;
+    text-decoration: none;
 }
 .btm1{
     margin-top:.26rem;

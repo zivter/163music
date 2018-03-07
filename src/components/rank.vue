@@ -32,7 +32,7 @@ export default {
               console.log(res.data.data.topList);
         });
     },
-    methods:{
+    methods:{ 
         handclick(id){
             router.push({name:"toplist",params:{topid:id}});
         }
