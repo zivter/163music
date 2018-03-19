@@ -83,14 +83,13 @@ export default{
 <style lang="scss" scoped>
 .player{
     width: 100%;
-    height: 603px;
-    background: url(../common/img/bg.png) no-repeat top left;
-    background-size: 100% 100%;
+    height: 100%;
+    //background: url(../common/img/bg.png) no-repeat top left;
+    //background-size: 100% 100%;
 }
 .p-top{
     width: 100%;
     text-align: center;
-    padding-top:82px;
     .musicname{
         font:600 24px/36px "";
     }
@@ -100,7 +99,7 @@ export default{
     margin:20px 0 0 0;
 }
 .p-contr{
-    margin:330px 0 0 44px;
+    margin:30px 0 0 44px;
     overflow: hidden;
     .pause{
         width: 92px;

@@ -63,7 +63,7 @@ export default{
             this.isresou = false;
             this.issousuo = true;
         },
-        showup(){
+        showup(){ 
             this.isshow = false;
             this.isresou = true;
             this.issousuo = false;
