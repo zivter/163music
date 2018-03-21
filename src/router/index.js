@@ -47,7 +47,7 @@ export default new Router({
             name: "album"
         },
         {
-            path: "/player/?songid=:songid&albummid=:albummid&songname=:songname&singername=:singername",
+            path: "/player/?songid=:songid&albummid=:albummid&songname=:songname&singername=:singername&songmid=:songmid",
             component: player,
             name: "player"
         },

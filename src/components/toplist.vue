@@ -16,7 +16,7 @@
         </div>
         <p class="add">排行榜 共{{songlist.length}}首</p>
         <ul class="toplistul">
-            <li v-for="song,index in songlist" class="toplistli" @click="play(song.data.songid,song.data.albummid,song.data.songname,song.data.singer[0].name)"><div class="liIndex">{{index+1}}</div><div class="liinfo"><span class="tittle">{{song.data.songname}}</span><span class="listtxt">{{song.data.singer[0].name}}  {{song.data.albumdesc}}</span></div></li>
+            <li v-for="song,index in songlist" class="toplistli" @click="play(song.data.songid,song.data.albummid,song.data.songname,song.data.singer[0].name,song.data.songmid)"><div class="liIndex">{{index+1}}</div><div class="liinfo"><span class="tittle">{{song.data.songname}}</span><span class="listtxt">{{song.data.singer[0].name}}  {{song.data.albumdesc}}</span></div></li>
         </ul>
     </div>
 </template>
@@ -45,13 +45,14 @@ export default{
         });
     },
     methods:{
-        play(songid,albummid,songname,singername){
+        play(songid,albummid,songname,singername,songmid){
             console.log(songid,albummid,songname,singername);
             router.push({name:"player",params:{
                     songid:songid,
                     albummid:albummid,
                     songname:songname,
-                    singername:singername
+                    singername:singername,
+                    songmid:songmid
                 }
             })
         }

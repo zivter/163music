@@ -31,6 +31,7 @@ export default{
     data(){
         return{
             songid:"",
+            songmid:"",
             albummid:"",
             songname:"",
             singername:"",
@@ -44,12 +45,12 @@ export default{
     mounted(){
         var audio = document.getElementById("aaa");
         this.songid=this.$route.params.songid;
+        this.songmid=this.$route.params.songmid;
         this.albummid = this.$route.params.albummid;
         this.songname = this.$route.params.songname;
         this.singername = this.$route.params.singername;
-        this.songsrc = "http://ws.stream.qqmusic.qq.com/"+this.songid+".m4a?fromtag=46";
+        this.songsrc = "http://thirdparty.gtimg.com/C100"+this.songmid+".m4a?fromtag=38";
         this.albumsrc = "https://y.gtimg.cn/music/photo_new/T002R300x300M000"+this.albummid+".jpg?max_age=2592000";
-
     },
     watch:{ 
         
