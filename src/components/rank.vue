@@ -1,6 +1,6 @@
 <template>
 <div>
-    <ul class="rankul">
+    <ul class="rankul content">
         <li v-for="pic in picslist" class="rankli" @click="handclick(pic.id)">
             <img :src="pic.picUrl" alt="" class="listpic">
             <div class="info">
